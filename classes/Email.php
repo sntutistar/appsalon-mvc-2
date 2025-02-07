@@ -62,8 +62,8 @@ class Email {
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASS'] ;   
         
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com','Appsalon.com');
+        $mail->setFrom('santiagotutistar289@gmail.com','Appsalon.com');
+        $mail->addAddress(''.$this->email.'');
         $mail->Subject = 'Olvidaste tu contraseña';
 
         $mail->isHTML(TRUE);
